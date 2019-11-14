@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\C#UNDWEB\\2019VSTrying\\2019VSTrying\\2019VSTrying.csproj": {}
+  },
+  "projects": {
+    "D:\\C#UNDWEB\\2019VSTrying\\2019VSTrying\\2019VSTrying.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C#UNDWEB\\2019VSTrying\\2019VSTrying\\2019VSTrying.csproj",
+        "projectName": "2019VSTrying",
+        "projectPath": "D:\\C#UNDWEB\\2019VSTrying\\2019VSTrying\\2019VSTrying.csproj",
+        "packagesPath": "C:\\Users\\Dr.Comp\\.nuget\\packages\\",
+        "outputPath": "D:\\C#UNDWEB\\2019VSTrying\\2019VSTrying\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dr.Comp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\C#UNDWEB\\projects\\LINQ\\LINq.csproj": {
+                "projectPath": "D:\\C#UNDWEB\\projects\\LINQ\\LINq.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C#UNDWEB\\projects\\LINQ\\LINq.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C#UNDWEB\\projects\\LINQ\\LINq.csproj",
+        "projectName": "LINq",
+        "projectPath": "D:\\C#UNDWEB\\projects\\LINQ\\LINq.csproj"
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    }
+  }
+}

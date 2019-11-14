@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "2019VSTrying/1.0.0": {
+        "dependencies": {
+          "LINq": "1.0.0"
+        },
+        "runtime": {
+          "2019VSTrying.dll": {}
+        }
+      },
+      "LINq/1.0.0": {
+        "runtime": {
+          "LINQ.exe": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "2019VSTrying/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LINq/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

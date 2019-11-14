@@ -1,0 +1,15 @@
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\2019VSTrying.exe
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\2019VSTrying.deps.json
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\2019VSTrying.runtimeconfig.json
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\2019VSTrying.runtimeconfig.dev.json
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\2019VSTrying.dll
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\2019VSTrying.pdb
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\obj\Debug\netcoreapp3.0\2019VSTrying.csprojAssemblyReference.cache
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\obj\Debug\netcoreapp3.0\2019VSTrying.AssemblyInfoInputs.cache
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\obj\Debug\netcoreapp3.0\2019VSTrying.AssemblyInfo.cs
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\obj\Debug\netcoreapp3.0\2019VSTrying.dll
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\obj\Debug\netcoreapp3.0\2019VSTrying.pdb
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\LINQ.exe
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\LINQ.pdb
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\bin\Debug\netcoreapp3.0\LINQ.exe.config
+D:\C#UNDWEB\2019VSTrying\2019VSTrying\obj\Debug\netcoreapp3.0\2019VSTrying.csproj.CopyComplete
