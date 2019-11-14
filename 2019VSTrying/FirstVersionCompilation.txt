@@ -1,0 +1,11 @@
+District: Odesa
+Area: 33.31
+Population: 2383075
+
+District: Chernivtsi
+Area: 8.097
+Population: 906701
+
+District: Odesa + Chernivtsi
+Area: 41.407000000000004
+Population: 3289776
