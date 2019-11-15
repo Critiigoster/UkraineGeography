@@ -1,20 +1,22 @@
 ﻿using System;
 using static System.Console;
 using LINQ;
+using System.Threading;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 namespace _2019VSTrying
 {
-   
-    class Program 
+
+    class Program
     {
-       
-        
+        private static object locker = new object();
+        static int Wtf = 0;
 
 
         static void Main(string[] args)
         {
+
 
 
             UkraineGeography[] Ukraine = new UkraineGeography[]{
@@ -29,8 +31,6 @@ namespace _2019VSTrying
         new UkraineGeography {District = "Kiev" , Area = 29.131, Population = 2934522  },
         new UkraineGeography {District = "Ivano-Frankivsk" , Area = 13.900, Population = 1377496 },
         new UkraineGeography {District = "Zaporizhia" , Area = 27.180, Population = 1721171 },
-        new UkraineGeography {District = "Luhansk" , Area = 26.684, Population =2167802  },
-        new UkraineGeography {District = "Donetsk" , Area = 26.517, Population = 4200461 },
         new UkraineGeography {District = "Kirovohrad" , Area = 24.588, Population = 956250  },
         new UkraineGeography {District = "Lviv" , Area = 21.833, Population =2529608  },
         new UkraineGeography {District = "Mykolaiv" , Area = 24.598, Population = 1141324 },
@@ -44,20 +44,32 @@ namespace _2019VSTrying
 
 
         };
+            UkraineGeography[] NotUkraine = new UkraineGeography[] {
+            new UkraineGeography { District = "Luhansk", Area = 26.684, Population = 2167802 },
+            new UkraineGeography { District = "Donetsk", Area = 26.517, Population = 4200461 },
+            new UkraineGeography { District = "Autonomous Republic of Crimea", Area = 26081, Population = 1968550 }
+            };
+            // Initialize indexes 
+            Index BiggestArea = 0; Index SmallestArea = ^1; // First and Last in Array
 
-            UkraineGeography BiggestOne = Ukraine[0];
-            UkraineGeography SmallestOne = Ukraine[Ukraine.Length - 1];
+
+            UkraineGeography BiggestOne = Ukraine[BiggestArea]; // Using objected indexes  instead of numeric ones
+            UkraineGeography SmallestOne = Ukraine[SmallestArea]; // also -> Ukraine[^1]
             BiggestOne.ShowInfoParticularDistrict(); // Show Random district -> Biggest
             SmallestOne.ShowInfoParticularDistrict(); // Show Random district -> Smallest
 
             UkraineGeography CombinationBiggestAndSmallest = BiggestOne + SmallestOne; // Using operator 
             CombinationBiggestAndSmallest.ShowInfoParticularDistrict(); // Show Combination both: smallest and biggest 
-                       
 
+            //  We do not have Autonomous Republic of Crimea and other not ukrainian lands; 
+            // Let's add it trough Lists and create them: 
+            List<UkraineGeography> UkraineAndNotUkraineNow = new List<UkraineGeography>(Ukraine);
+            UkraineAndNotUkraineNow.AddRange(NotUkraine);
+            // Here we got previous and Added elements 
 
+           
             ReadLine();
-         }
+        }
 
-        
     }
 }
