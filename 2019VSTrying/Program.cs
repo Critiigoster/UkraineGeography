@@ -1,9 +1,10 @@
 ﻿using System;
 using static System.Console;
 using LINQ;
-using System.Threading;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
+using System.IO;
 
 namespace _2019VSTrying
 {
@@ -14,11 +15,12 @@ namespace _2019VSTrying
         static int Wtf = 0;
 
 
-        static void Main(string[] args)
+
+        static void Main(string[] args) 
         {
 
 
-
+            // Create like a database
             UkraineGeography[] Ukraine = new UkraineGeography[]{
         new UkraineGeography {District = "Odesa" , Area = 33.310, Population = 2383075 },
         new UkraineGeography {District = "Dnipropetrovsk" , Area = 31.914, Population = 3231140 },
@@ -55,21 +57,87 @@ namespace _2019VSTrying
 
             UkraineGeography BiggestOne = Ukraine[BiggestArea]; // Using objected indexes  instead of numeric ones
             UkraineGeography SmallestOne = Ukraine[SmallestArea]; // also -> Ukraine[^1]
-            BiggestOne.ShowInfoParticularDistrict(); // Show Random district -> Biggest
-            SmallestOne.ShowInfoParticularDistrict(); // Show Random district -> Smallest
+            WriteLine(BiggestOne.ToString()); // Show Random district -> Biggest
+            WriteLine(SmallestOne.ToString()); // Show Random district -> Smallest
 
             UkraineGeography CombinationBiggestAndSmallest = BiggestOne + SmallestOne; // Using operator 
-            CombinationBiggestAndSmallest.ShowInfoParticularDistrict(); // Show Combination both: smallest and biggest 
+            WriteLine(CombinationBiggestAndSmallest.ToString()); // Show Combination both: smallest and biggest 
 
             //  We do not have Autonomous Republic of Crimea and other not ukrainian lands; 
             // Let's add it trough Lists and create them: 
             List<UkraineGeography> UkraineAndNotUkraineNow = new List<UkraineGeography>(Ukraine);
             UkraineAndNotUkraineNow.AddRange(NotUkraine);
             // Here we got previous and Added elements 
+            Console.WriteLine("Input District to look at info...");
+
+
+             TaskAsyncFile(UkraineAndNotUkraineNow); // Supporting threading 
+
+
+             // Looking for district by ReadLine
+            while (true) { 
+
+                string Put = ReadLine();
+                if (Put == "Break" || Put == "break") break; // In order to stop loop
+
+                //  Console.WriteLine("Ukraine don't consist that district"); - Here we got problem with it 
+
+
+                var ShowDistrict = from Distr in UkraineAndNotUkraineNow
+                               let Particular = Put
+                               where Distr.District == Particular
+                               select Distr;
+
+                // Linq 
+                
+
+                foreach ( var item in ShowDistrict)
+                {
+                    WriteLine($"Your District -> {item.District};\nArea -> {item.Area};" +
+                        $"\nPopulation -> {item.Population} ");
+                                       
+                }
+
+                
+            }    
+            Console.WriteLine("You have aborted lookup");
+
+
 
            
+
             ReadLine();
         }
 
+        // Add asynchronous method which will writes all countries at some file (.txt) 
+
+        static async Task TaskAsyncFile(IList<UkraineGeography> FileInfoWillBe) {
+
+            string path = @"D:\C#UNDWEB\2019VSTrying\2019VSTrying\AllCountriesFile.txt";
+
+           try
+            {
+                using (StreamWriter asyncfileStream = new StreamWriter(path, false, System.Text.Encoding.Default)) 
+                    // try .. finally (without close)
+                {
+                    foreach (var item in FileInfoWillBe) // all countries
+                    await asyncfileStream.WriteLineAsync(item.ToString()); // async version for WriteLine()
+                                                                
+                }
+
+            }
+            catch (Exception aboutFile)
+            {
+                Console.WriteLine(aboutFile.Message);
+            }
+        }
+
+        
+
+
     }
-}
+        
+
+
+    }
+

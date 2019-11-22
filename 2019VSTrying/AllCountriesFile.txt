@@ -1,0 +1,96 @@
+District: Odesa
+Area: 33.31
+Population: 2383075
+ 
+District: Dnipropetrovsk
+Area: 31.914
+Population: 3231140
+ 
+District: Chernihiv
+Area: 33.865
+Population: 1020078
+ 
+District: Kherson
+Area: 28.461
+Population: 1046981
+ 
+District: Kharkiv
+Area: 31.415
+Population: 2694007
+ 
+District: Zhytomyr
+Area: 29.832
+Population: 1231239
+ 
+District: Vinnytsia
+Area: 26.513
+Population: 1575808
+ 
+District: Poltava
+Area: 28.748
+Population: 1413829
+ 
+District: Kiev
+Area: 29.131
+Population: 2934522
+ 
+District: Ivano-Frankivsk
+Area: 13.9
+Population: 1377496
+ 
+District: Zaporizhia
+Area: 27.18
+Population: 1721171
+ 
+District: Kirovohrad
+Area: 24.588
+Population: 956250
+ 
+District: Lviv
+Area: 21.833
+Population: 2529608
+ 
+District: Mykolaiv
+Area: 24.598
+Population: 1141324
+ 
+District: Cherkasy
+Area: 20.9
+Population: 1220363
+ 
+District: Khmelnytskyi
+Area: 20.645
+Population: 1274409
+ 
+District: Rivne
+Area: 20.047
+Population: 1160647
+ 
+District: Ternopil
+Area: 13.823
+Population: 1052312
+ 
+District: Sumy
+Area: 23.834
+Population: 1094284
+ 
+District: Zakarpattia
+Area: 12.777
+Population: 1258155
+ 
+District: Chernivtsi
+Area: 8.097
+Population: 906701
+ 
+District: Luhansk
+Area: 26.684
+Population: 2167802
+ 
+District: Donetsk
+Area: 26.517
+Population: 4200461
+ 
+District: Autonomous Republic of Crimea
+Area: 26081
+Population: 1968550
+ 

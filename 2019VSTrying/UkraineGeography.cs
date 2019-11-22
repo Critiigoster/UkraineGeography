@@ -20,14 +20,13 @@ namespace _2019VSTrying
 
         //}
         // Call CaseInsensitiveComparer.Compare with the parameters reversed.
-        
+
+        // Indexer
+       
         public int PopulationDensity() => Population / (int)Area;
 
 
-
-        public void ShowInfoParticularDistrict() => Console.WriteLine($"District: {this.District}\n" +
-            $"Area: {this.Area}\n" + $"Population: {this.Population}\n ");
-
+        
 
         public static UkraineGeography operator +(UkraineGeography FirstDistrict, UkraineGeography SecondDistrict)
             => new UkraineGeography
@@ -38,7 +37,14 @@ namespace _2019VSTrying
             };
 
 
-
+        public override string ToString() 
+        {
+            return ($"District: {this.District}\n" +
+            $"Area: {this.Area}\n" + $"Population: {this.Population}\n ");
+        }
+        // We can use that instead of virtual ToString() Method
+        //public void ShowInfoParticularDistrict() => Console.WriteLine($"District: {this.District}\n" +
+        //    $"Area: {this.Area}\n" + $"Population: {this.Population}\n ");
 
     }
 }
